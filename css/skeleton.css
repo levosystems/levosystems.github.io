@@ -124,8 +124,10 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+  font-family: "Questrial", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");}
 
 
 /* Typography
@@ -158,9 +160,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #FD9A2B; }
 a:hover {
-  color: #0FA0CE; }
+  color: #F7AF69; }
 
 
 /* Buttons
@@ -206,8 +208,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
+  background-color: #FD9A2B;
+  border-color: #FD9A2B; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -219,8 +221,8 @@ input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB; }
+  background-color: #F7AF69;
+  border-color: #F7AF69; }
 
 
 /* Forms
@@ -266,7 +268,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid #FD9A2B;
   outline: 0; }
 label,
 legend {
@@ -390,6 +392,33 @@ hr {
   content: "";
   display: table;
   clear: both; }
+
+  /* video */
+  video#bgvid {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      background: url(polina.jpg) no-repeat;
+      background-size: cover;
+      opacity: 0.6;
+
+  }
+
+  #footer {
+    position: relative;
+    margin-top: -150px; /* negative value of footer height */
+    height: 150px;
+    clear: both;
+}
 
 
 /* Media Queries
