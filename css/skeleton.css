@@ -413,13 +413,31 @@ hr {
 
   }
 
-  #footer {
-    position: relative;
-    margin-top: -150px; /* negative value of footer height */
-    height: 150px;
-    clear: both;
+
+
+.logoLevo_container {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-shadow: 0 0 ;
+  position: relative;
+  margin-top: 50%;
+  padding-top: 10%;
+  padding-bottom: 10%; /* yes !! ; ) */
+ /* different from (2) -> no height: 0;*/
 }
 
+.logoLevo {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+.footerLevo {
+   display: block;
+   text-align: center;
+
+}
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
